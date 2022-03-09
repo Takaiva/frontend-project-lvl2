@@ -22,5 +22,10 @@
   "homepage": "https://github.com/Takaiva/frontend-project-lvl2#readme",
   "dependencies": {
     "commander": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
   }
 }
