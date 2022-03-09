@@ -1,0 +1,2 @@
+diff:
+	node bin/gendiff
