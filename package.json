@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Takaiva/frontend-project-lvl2/issues"
   },
-  "homepage": "https://github.com/Takaiva/frontend-project-lvl2#readme"
+  "homepage": "https://github.com/Takaiva/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^9.0.0"
+  }
 }
