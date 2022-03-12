@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/Takaiva/frontend-project-lvl2#readme",
   "dependencies": {
-    "commander": "^9.0.0"
+    "commander": "^9.0.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^8.10.0",
