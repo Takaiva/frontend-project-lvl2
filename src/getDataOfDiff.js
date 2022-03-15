@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { getPath, getExt, readFile } from './fileReader.js';
 
 const indexOfNestedArr = (coll) => {
   const result = coll
@@ -28,12 +29,12 @@ const normalizeData = (coll) => {
   return result;
 };
 
-const getDataOfDiff = (file1, file2) => {
-  const allKeys = _.union(Object.keys(file1), Object.keys(file2));
+const getDataOfDiff = (data1, data2) => {
+  const allKeys = _.union(Object.keys(data1), Object.keys(data2));
   const sortedAllKeys = _.sortBy(allKeys);
   const diffData = sortedAllKeys.map((key) => {
-    const value1 = file1[key];
-    const value2 = file2[key];
+    const value1 = data1[key];
+    const value2 = data2[key];
     if (value1 === value2) {
       return [key, value1, 'bothHaveTheSame'];
     }
