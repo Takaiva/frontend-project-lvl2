@@ -1,7 +1,12 @@
 import getDataOfDiff from './getDataOfDiff.js';
+import { parseJson } from './dataParser.js';
+import { readFile } from './fileReader.js';
 
-const genDiff = (coll) => {
-  const data = getDataOfDiff(coll);
+const genDiff = (file1, file2) => {
+  const data1 = parseJson(readFile(file1));
+  const data2 = parseJson(readFile(file2));
+  const data = getDataOfDiff(data1, data2);
+
   let result = data.reduce((acc, item) => {
     const key = item[0];
     const value = item[1];
