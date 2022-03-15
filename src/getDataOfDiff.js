@@ -39,7 +39,7 @@ const getDataOfDiff = (file1, file2) => {
     }
     if (value1 !== value2 && value1 !== undefined && value2 !== undefined) {
       return [
-        [key, value1, 'hasFirstfile'],
+        [key, value1, 'hasFirstFile'],
         [key, value2, 'hasSecondFile'],
       ];
     }
