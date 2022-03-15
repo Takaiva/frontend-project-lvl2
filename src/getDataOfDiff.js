@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import { getPath, getExt, readFile } from './fileReader.js';
 
 const indexOfNestedArr = (coll) => {
   const result = coll
