@@ -31,9 +31,8 @@ const normalizeData = (coll) => {
 const getDataOfDiff = (data1, data2) => {
   const keys1 = Object.keys(data1);
   const keys2 = Object.keys(data2);
-  const allKeys = _.union(keys1, keys2);
-  const sortedAllKeys = _.sortBy(allKeys);
-  const diffData = sortedAllKeys.map((key) => {
+  const allKeys = _.sortBy((_.union(keys1, keys2)));
+  const diffData = allKeys.map((key) => {
     const value1 = data1[key];
     const value2 = data2[key];
     if (value1 === value2) {
