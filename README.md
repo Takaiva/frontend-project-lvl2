@@ -6,3 +6,6 @@
 
 ### Eslint status:
 [![make lint](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml/badge.svg)](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml)
+
+### Compare two .json files:
+[![asciicast](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH.svg)](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH)
