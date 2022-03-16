@@ -8,7 +8,7 @@ const genDiff = (file1, file2) => {
   const data1 = parseJson(fileData1);
   const data2 = parseJson(fileData2);
   const data = getDataOfDiff(data1, data2);
-  let result = data.reduce((acc, item) => {
+  const result = data.reduce((acc, item) => {
     const key = item[0];
     const value = item[1];
     const status = item[2];
@@ -27,8 +27,7 @@ const genDiff = (file1, file2) => {
         return acc;
     }
   }, '');
-  result = `{${result}\n}`;
-  return result;
+  return `{${result}\n}`;
 };
 
 export default genDiff;
