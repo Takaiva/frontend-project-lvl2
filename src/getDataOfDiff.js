@@ -50,7 +50,7 @@ const getDataOfDiff = (data1, data2) => {
     if (value1 !== value2 && value1 === undefined) {
       return [key, value2, 'hasOnlySecondFile'];
     }
-    return diffData;
+    return null;
   });
   return normalizeData(diffData);
 };
