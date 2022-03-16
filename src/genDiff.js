@@ -11,22 +11,20 @@ const genDiff = (file1, file2) => {
     const key = item[0];
     const value = item[1];
     const status = item[2];
-    if (status === 'hasOnlyFirstFile') {
-      return `${acc}\n  - ${key}: ${value}`;
+    switch (status) {
+      case 'hasOnlyFirstFile':
+        return `${acc}\n  - ${key}: ${value}`;
+      case 'bothHaveTheSame':
+        return `${acc}\n    ${key}: ${value}`;
+      case 'hasFirstFile':
+        return `${acc}\n  - ${key}: ${value}`;
+      case 'hasSecondFile':
+        return `${acc}\n  + ${key}: ${value}`;
+      case 'hasOnlySecondFile':
+        return `${acc}\n  + ${key}: ${value}`;
+      default:
+        return acc;
     }
-    if (status === 'bothHaveTheSame') {
-      return `${acc}\n    ${key}: ${value}`;
-    }
-    if (status === 'hasFirstFile') {
-      return `${acc}\n  - ${key}: ${value}`;
-    }
-    if (status === 'hasSecondFile') {
-      return `${acc}\n  + ${key}: ${value}`;
-    }
-    if (status === 'hasOnlySecondFile') {
-      return `${acc}\n  + ${key}: ${value}`;
-    }
-    return acc;
   }, '');
   result = `{${result}\n}`;
   return result;
