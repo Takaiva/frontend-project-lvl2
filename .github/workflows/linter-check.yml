@@ -6,6 +6,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [17.x]
     steps:
     # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
@@ -17,7 +20,7 @@ jobs:
         uses: actions/setup-node@v1
         # The Node.js version to configure
         with:
-          node-version: 17.3.1
+          node-version: ${{ matrix.node-version }}
       - name: npm install
         # Install project
         run: |
@@ -29,6 +32,3 @@ jobs:
         # Run Linter
         run: |
           make lint
-        # Run tests
-      - run: |
-          make test
