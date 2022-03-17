@@ -1,4 +1,3 @@
-import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import json from '../__fixtures__/json.js';
