@@ -29,3 +29,6 @@ jobs:
         # Run Linter
         run: |
           make lint
+        # Run tests
+      - run: |
+          make test
