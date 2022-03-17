@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
-import json from '../__fixtures__/json.js';
+import json from '../__fixtures__/plainJson.js';
 import genDiff from '../src/genDiff.js';
 
 const __filename = fileURLToPath(import.meta.url);
