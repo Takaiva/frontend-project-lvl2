@@ -33,9 +33,13 @@ jobs:
         # Run tests
         run: |
           make test
-      - uses: amancevice/setup-code-climate@v0
+      - name: Test & publish code coverage
+        # Publish code coverage on Code Climate
+        # https://github.com/paambaati/codeclimate-action
+        uses: paambaati/codeclimate-action@v2.7.4
+        # Add Code Climate secret key
         env:
-            cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       - run: cc-test-reporter before-build
         with:
           coverageCommand: make test-coverage
