@@ -29,9 +29,10 @@ jobs:
       - name: Setup Code Climate test-reporter
         run: | 
             # download test reporter as a static binary
-            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-0.6.3-linux-amd64 > ./cc-reporter
-            chmod +x ./cc-reporter
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-0.6.3-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
             ./cc-test-reporter before-build
+
       - name: Test & publish code coverage
         # Publish code coverage on Code Climate
         # https://github.com/paambaati/codeclimate-action
