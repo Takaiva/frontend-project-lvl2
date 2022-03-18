@@ -10,3 +10,6 @@
 
 ### Compare two .json files:
 [![asciicast](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH.svg)](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH)
+
+### Compare two .yaml/.yml files:
+[![asciicast](https://asciinema.org/a/xbyqSTttf5yKWwnBfUri17P1W.svg)](https://asciinema.org/a/xbyqSTttf5yKWwnBfUri17P1W)
