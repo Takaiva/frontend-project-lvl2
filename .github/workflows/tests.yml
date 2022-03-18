@@ -1,9 +1,9 @@
 name: make test
-on:
-  push:
-    branches: [ main ]
+
+on: [push]
+
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -29,7 +29,7 @@ jobs:
         uses: paambaati/codeclimate-action@v3.0.0
         # Add Code Climate secret key
         env:
-          CC_TEST_REPORTER_ID: 5772e95cad15655f7c54e6b7e3d552843fee5bdfeccfc63144c3f98cdaecdb56 
+          CC_TEST_REPORTER_ID: ${{ secret.CC_TEST_REPORTER_ID }}
         with:
           coverageCommand: make test-coverage
           debug: true
