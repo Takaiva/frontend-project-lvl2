@@ -3,6 +3,7 @@
 
 ### CodeClimate maintainability and test coverage:
 [![Maintainability](https://api.codeclimate.com/v1/badges/948325797767dd709fce/maintainability)](https://codeclimate.com/github/Takaiva/frontend-project-lvl2/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/948325797767dd709fce/test_coverage)](https://codeclimate.com/github/Takaiva/frontend-project-lvl2/test_coverage)
 
 ### Eslint status:
 [![make lint](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml/badge.svg)](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml)
