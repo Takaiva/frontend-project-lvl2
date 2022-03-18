@@ -1,5 +1,5 @@
 import getDataOfDiff from './getDataOfDiff.js';
-import parseData from '.parsers.js';
+import parseData from './parsers.js';
 import { readFile, getExt } from './fileReader.js';
 
 const genDiff = (file1, file2) => {
