@@ -9,5 +9,5 @@ lint:
 test:
 	NODE_OPTIONS=--experimental-vm-modules npx jest
 test-coverage:
-	npx test -- --coverage --coverageProvider=v8
+	NODE_OPTIONS=--experimental-vm-modules npx jest --coverage
 
