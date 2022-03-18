@@ -1,3 +1,4 @@
+import { test, expect } from '@jest/globals';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import json from '../__fixtures__/plainJson.js';
