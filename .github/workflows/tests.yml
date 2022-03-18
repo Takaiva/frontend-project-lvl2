@@ -32,7 +32,6 @@ jobs:
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-0.6.3-linux-amd64 > ./cc-reporter
             chmod +x ./cc-reporter
             ./cc-reporter before-build
-            ./cc-reporter after-build
 
       - name: Test & publish code coverage
         # Publish code coverage on Code Climate
