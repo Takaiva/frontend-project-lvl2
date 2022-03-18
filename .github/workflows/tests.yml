@@ -43,6 +43,5 @@ jobs:
         with:
           coverageCommand: make test-coverage
           debug: true
-      - run: |
-        name: code-coverage
+        run: |
             ./cc-test-reporter after-build -d -t cobertura --exit-code $?
