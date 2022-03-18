@@ -32,6 +32,7 @@ jobs:
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-0.6.3-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
             ./cc-test-reporter before-build
+            ./cc-test-reporter after-build
 
       - name: Test & publish code coverage
         # Publish code coverage on Code Climate
@@ -43,5 +44,3 @@ jobs:
         with:
           coverageCommand: make test-coverage
           debug: true
-        run: |
-            ./cc-test-reporter after-build -d -t cobertura --exit-code $?
