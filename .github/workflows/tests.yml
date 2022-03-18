@@ -1,36 +1,26 @@
-name: make test
-
-on: [push]
-
-
+name: test
+on:
+  push:
+    branches: [ main ]
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [14.x]
 
     steps:
-    # Check-out repository under GitHub workspace
-        # https://github.com/actions/checkout
       - uses: actions/checkout@v2
-        # Step's name
       - name: Use Node.js ${{ matrix.node-version }}
-        # Configures the node version used on GitHub-hosted runners
-        # https://github.com/actions/setup-node
         uses: actions/setup-node@v1
-        # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
-        # Install project
         run: |
           make install
-        # Add environment variables
         env:
           CI: true
-      - name: Run tests
-        # Run tests
+      - name: Test
         run: |
           make test
       - name: Test & publish code coverage
@@ -40,7 +30,6 @@ jobs:
         # Add Code Climate secret key
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-      - run: cc-test-reporter before-build
         with:
           coverageCommand: make test-coverage
           debug: true
