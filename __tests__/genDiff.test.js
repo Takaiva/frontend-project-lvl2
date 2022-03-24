@@ -22,8 +22,4 @@ describe('check output', () => {
     const result = genDiff(yaml1, yaml2);
     expect(result).toBe(stylish);
   });
-  test('if format is falsy', () => {
-    const result = genDiff(yaml1, yaml2, 'notStylish');
-    expect(result).toBe('Falsy format');
-  });
 });
