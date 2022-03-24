@@ -8,8 +8,14 @@
 ### Eslint status:
 [![make lint](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml/badge.svg)](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml)
 
-### Compare two .json files:
+### Compare two plain .json files:
 [![asciicast](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH.svg)](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH)
 
-### Compare two .yaml/.yml files:
+### Compare two plain .yaml/.yml files:
 [![asciicast](https://asciinema.org/a/xbyqSTttf5yKWwnBfUri17P1W.svg)](https://asciinema.org/a/xbyqSTttf5yKWwnBfUri17P1W)
+
+### Compare two nested .json files:
+[![asciicast](https://asciinema.org/a/acaUj9eSxis0W10Yv9bTmfNaI.svg)](https://asciinema.org/a/acaUj9eSxis0W10Yv9bTmfNaI)
+
+### Compare two nested .yaml/.yml files:
+[![asciicast](https://asciinema.org/a/zwnzxlKBZ3OElquoXbDzpXyUM.svg)](https://asciinema.org/a/zwnzxlKBZ3OElquoXbDzpXyUM)
