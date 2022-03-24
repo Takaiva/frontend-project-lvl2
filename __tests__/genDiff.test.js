@@ -1,7 +1,7 @@
 import { test, expect } from '@jest/globals';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
-import json from '../__fixtures__/plainJson.js';
+import stylish from '../__fixtures__/stylish.js';
 import genDiff from '../src/genDiff.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -16,10 +16,10 @@ const yaml2 = getFixturePath('file2.yaml');
 describe('check output', () => {
   test('check resulted diff with json files', () => {
     const result = genDiff(json1, json2);
-    expect(result).toBe(json);
+    expect(result).toBe(stylish);
   });
   test('check resulted diff with yaml files', () => {
     const result = genDiff(yaml1, yaml2);
-    expect(result).toBe(json);
+    expect(result).toBe(stylish);
   });
 });
