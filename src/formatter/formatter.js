@@ -4,7 +4,7 @@ const getFormatted = (data, format) => {
   if (format === 'stylish') {
     return getStylish(data, format);
   }
-  return false;
+  throw new Error('Falsy format');
 };
 
 export default getFormatted;
