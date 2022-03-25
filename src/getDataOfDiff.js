@@ -9,39 +9,19 @@ const getDataOfDiff = (data1, data2) => {
     const value2 = data2[key];
 
     if ((_.isObject(value1)) && (_.isObject(value2))) {
-      return {
-        key,
-        status: 'nested',
-        value: getDataOfDiff(value1, value2),
-      };
+      return { key, status: 'nested', value: getDataOfDiff(value1, value2) };
     }
     if (value1 === value2) {
-      return {
-        key,
-        status: 'bothHaveTheSame',
-        value: value1,
-      };
+      return { key, status: 'bothHaveTheSame', value: value1 };
     }
     if (value1 !== value2 && value1 !== undefined && value2 !== undefined) {
-      return {
-        key,
-        status: 'changed',
-        value: [value1, value2],
-      };
+      return { key, status: 'changed', value: [value1, value2] };
     }
     if (value1 !== value2 && value2 === undefined) {
-      return {
-        key,
-        status: 'hasOnlyFirstFile',
-        value: value1,
-      };
+      return { key, status: 'hasOnlyFirstFile', value: value1 };
     }
     if (value1 !== value2 && value1 === undefined) {
-      return {
-        key,
-        status: 'hasOnlySecondFile',
-        value: value2,
-      };
+      return { key, status: 'hasOnlySecondFile', value: value2 };
     }
     return diffData;
   });
