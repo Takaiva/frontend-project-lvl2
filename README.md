@@ -24,7 +24,7 @@ make install
 npm link
 ```
 
-### Description:
+## Description:
 The app works with either 'json' or 'yaml/yml' files.
 It compares two files and generates the difference between them.
 
