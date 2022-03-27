@@ -25,3 +25,9 @@
 
 ### Compare two nested yaml/yml files and get output in 'plain' format:
 [![asciicast](https://asciinema.org/a/PCGrSmmSAQGiY60nIoWlX2d3c.svg)](https://asciinema.org/a/PCGrSmmSAQGiY60nIoWlX2d3c)
+
+### Compare two nested json files and get output in 'json' format:
+[![asciicast](https://asciinema.org/a/5uudELsqvsyTNnz0iCmhd6v7G.svg)](https://asciinema.org/a/5uudELsqvsyTNnz0iCmhd6v7G)
+
+### Compare two nested yaml/yml files and get output in 'json' format:
+[![asciicast](https://asciinema.org/a/8ern4toCUecSbEenBpfM8S1oQ.svg)](https://asciinema.org/a/8ern4toCUecSbEenBpfM8S1oQ)
