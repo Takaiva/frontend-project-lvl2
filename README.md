@@ -8,14 +8,20 @@
 ### Eslint status:
 [![make lint](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml/badge.svg)](https://github.com/Takaiva/frontend-project-lvl2/actions/workflows/linter-check.yml)
 
-### Compare two plain .json files:
+### Compare two plain json files:
 [![asciicast](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH.svg)](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH)
 
-### Compare two plain .yaml/.yml files:
+### Compare two plain yaml/yml files:
 [![asciicast](https://asciinema.org/a/xbyqSTttf5yKWwnBfUri17P1W.svg)](https://asciinema.org/a/xbyqSTttf5yKWwnBfUri17P1W)
 
-### Compare two nested .json files:
+### Compare two nested json files and get output in 'stylish' format:
 [![asciicast](https://asciinema.org/a/acaUj9eSxis0W10Yv9bTmfNaI.svg)](https://asciinema.org/a/acaUj9eSxis0W10Yv9bTmfNaI)
 
-### Compare two nested .yaml/.yml files:
+### Compare two nested yaml/yml files and get output in 'stylish' format:
 [![asciicast](https://asciinema.org/a/zwnzxlKBZ3OElquoXbDzpXyUM.svg)](https://asciinema.org/a/zwnzxlKBZ3OElquoXbDzpXyUM)
+
+### Compare two nested json files and get output in 'plain' format:
+[![asciicast](https://asciinema.org/a/6o0c1VDomQadAddmPCLVf5EDI.svg)](https://asciinema.org/a/6o0c1VDomQadAddmPCLVf5EDI)
+
+### Compare two nested yaml/yml files and get output in 'plain' format:
+[![asciicast](https://asciinema.org/a/PCGrSmmSAQGiY60nIoWlX2d3c.svg)](https://asciinema.org/a/PCGrSmmSAQGiY60nIoWlX2d3c)

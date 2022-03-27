@@ -1,7 +1,7 @@
 import getDataOfDiff from './getDataOfDiff.js';
 import parseData from './parsers.js';
 import { readFile, getExt } from './fileReader.js';
-import getFormatted from './formatter/formatter.js';
+import getFormatted from './formatters/index.js';
 
 const genDiff = (file1, file2, format = 'stylish') => {
   const fileData1 = readFile(file1);
