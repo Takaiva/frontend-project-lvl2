@@ -1,9 +1,10 @@
 import { test, expect } from '@jest/globals';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
-import stylish from '../__fixtures__/stylish.js';
 import genDiff from '../src/genDiff.js';
+import stylish from '../__fixtures__/stylish.js';
 import plain from '../__fixtures__/plain.js';
+import json from '../__fixtures__/json.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -33,5 +34,16 @@ describe('check plain output', () => {
   test('check resulted diff with yaml files', () => {
     const result = genDiff(yaml1, yaml2, 'plain');
     expect(result).toBe(plain);
+  });
+});
+
+describe('check json output', () => {
+  test('check resulted diff with json files', () => {
+    const result = genDiff(json1, json2, 'json');
+    expect(result).toBe(json);
+  });
+  test('check resulted diff with yaml/yml files', () => {
+    const result = genDiff(yaml1, yaml2, 'json');
+    expect(result).toBe(json);
   });
 });
