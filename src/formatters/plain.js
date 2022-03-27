@@ -21,7 +21,7 @@ const genPlain = (data) => {
             return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was updated. From [complex value] to ${toString(actualValue[1])}\n`;
           }
           if (_.isPlainObject(actualValue[1])) {
-            return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was updated. From [complex value] to ${toString(actualValue[0])}\n`;
+            return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was updated. From ${toString(actualValue[0])} to [complex value]\n`;
           }
           return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was updated. From ${toString(actualValue[0])} to ${toString(actualValue[1])}\n`;
         }
