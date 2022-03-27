@@ -25,6 +25,7 @@ const genPlain = (data) => {
           }
           return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was updated. From ${toString(actualValue[0])} to ${toString(actualValue[1])}\n`;
         }
+
         case 'hasOnlyFirstFile':
           return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was removed\n`;
 
@@ -34,6 +35,7 @@ const genPlain = (data) => {
           }
           return `${acc}Property '${actualRoute.replace(actualRoute[0], '')}' was added with value: ${toString(actualValue)}\n`;
         }
+
         default:
           return acc;
       }
