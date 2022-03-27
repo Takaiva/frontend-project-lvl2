@@ -31,7 +31,7 @@ It compares two files and generates the difference between them.
 `Usage`
 
 ```sh
-gendiff [<option>] [<filepath1> <filepath2>]
+gendiff [options] <filepath1> <filepath2>
 ```
 
 `Options`
@@ -47,8 +47,10 @@ use this flag to choose the output format
 to get the 'stylish' diff output, use
 
 ```sh
-gendiff -f stylish <filpath1> <filepath2>
+gendiff -f stylish <filepath1> <filepath2>
 ```
+
+## Visual demonstration:
 
 ### Compare two plain json files:
 [![asciicast](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH.svg)](https://asciinema.org/a/2KNVhzMAtIV816LGRvGWA25lH)
