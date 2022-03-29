@@ -50,7 +50,7 @@ plain
 json
 ```
 
-Example`
+`Example`
 
 to get the 'stylish' diff output, use
 
