@@ -42,7 +42,15 @@ use this flag to choose the output format
 -f, --format <format>
 ```
 
-`Example`
+Available formats:
+
+```sh
+stylish (default format)
+plain
+json
+```
+
+Example`
 
 to get the 'stylish' diff output, use
 
